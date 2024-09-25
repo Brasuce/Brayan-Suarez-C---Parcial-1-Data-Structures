@@ -98,21 +98,40 @@ Des = Cf - N
 Vector x:  
 No se ve con que se inicializa pero en la pregunta dice que su capacidad inicial es 5 y se duplica al hacer resize.  
 Se van a agregar 10.000 elementos con el bucle for.  
-
+  
 La capacidad final es 10.240, y se usan 10.000 casillas, por lo que su desperdicio es de 240.  
-
+  
 Vector y:  
 Este vector se inicializa con una capacidad de 10 y cada resize se multiplica su capacidad por 1.8    
 Se van a agregar 10.000 elementos con el bucle for.  
-
-La capacidad final es 16.787, y se usan 10.000 casillas, por lo que su desperdicio es de 6.787.  
-
+  
+La capacidad final es 11.568, y se usan 10.000 casillas, por lo que su desperdicio es de 1.568.  
+  
 Vector z:  
 Este vector se inicializa con una capacidad de 100 y cada resize duplica su capacidad.  
 Se van a agregar 10.000 elementos con el bucle for.  
-
+  
 Su capacidad final será de 12.800, y como se usan 10.000 casillas, por lo que su desperdicio es de 2.800.  
+  
+### 2. Cuál de los vectores resultó ser más eficiente a la hora de ejecutar el programa? Justifique clara y concisamente su respuesta.  
+  
+Pues en este caso, si mis calculos son correctos y no la regué en ningún lado, el Vector X viene siendo el que resulto ser más  
+eficiente. Esto se debe a que su capacidad en memoria es menor, ya que fue el vector de menor tamaño (10.240), y que además, en este  
+problema, fue quien tuvo un menor desperdicio, con solo 240 casillas desperdiciadas.  
 
-### 2. Cuál de los vectores resultó ser más eficiente a la hora de ejecutar el programa? Justifique clara y concisamente su respuesta.
+## Pregunta 3  
 
-
+En este punto usted deberá crear la estructura de datos AdjacencyList para representar  
+redes de transporte de forma general. Es decir, con un número arbitrario de ciudades y con  
+conexiones arbitrarias entre las mismas. Tenga en cuenta que las ciudades siempre se  
+representan con números consecutivos que comienzan desde cero. Además es importante  
+notar que no todas las ciudades están conectadas entre si.  
+  
+1. Proponga una implementación en C++ de la clase AdjacencyList , defina  
+apropiadamente sus atributos y sus operaciones. Usted puede utilizar para esto  
+cualquiera de las estructuras de datos discutidas en clase.  
+   
+2. Cree operaciones para adicionar y remover ciudades.  
+   
+3. Cree una operación que dada una ciudad retorne las ciudades que se encuentran  
+conectadas con esta.  
