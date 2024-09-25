@@ -52,7 +52,32 @@ a los punteros.
 Así concluyo, una vez más, en que ninguna de las estructuras mencionadas es más eficiente que la otra. 
 Esto realmente dependerá de lo que se quiere llevar a cabo con su uso. }
 
+## Pregunta 2  
 
+Considere el siguiente programa:  
 
+> int main() {  
+>   Vector<int> x;  
+>   Vector<int> y(10,1.8);  
+>   Vector<int> z(100, 2.0);  
+>   for (unsigned int i = 0; i < 10000; i++) {  
+>     x.push_back(i);  
+>     y.push_back(i);  
+>     z.push_back(i);  
+>   }  
+>   return 0;  
+> }  
 
+El vector x es construido (línea 2) utilizando el constructor por defecto que tiene una  
+capacidad inicial de 5 y una política de crecimiento de 2.0. Es decir, cada que se redimensiona  
+se solicita memoria para un arreglo del doble de los elementos que se almacenan hasta ese  
+momento. El vector y se construye (línea 3) con 10 elementos de capacidad inicial y una  
+política de crecimiento de 1.8. Por último el vector z es inicializado (línea 4) con una capacidad  
+inicial de 100 elementos y una política de crecimiento de 2.0.  
+
+1. Para cada uno de los vectores especifique cuál es su capacidad final y el desperdicio en
+el que incurre.
+
+2. Cuál de los vectores resultó ser más eficiente a la hora de ejecutar el programa?
+Justifique clara y concisamente su respuesta.
 
