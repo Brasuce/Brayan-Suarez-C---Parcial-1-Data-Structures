@@ -75,9 +75,44 @@ momento. El vector y se construye (línea 3) con 10 elementos de capacidad inici
 política de crecimiento de 1.8. Por último el vector z es inicializado (línea 4) con una capacidad  
 inicial de 100 elementos y una política de crecimiento de 2.0.  
 
-1. Para cada uno de los vectores especifique cuál es su capacidad final y el desperdicio en
-el que incurre.
+### 1. Para cada uno de los vectores especifique cuál es su capacidad final y el desperdicio en el que incurre.
 
-2. Cuál de los vectores resultó ser más eficiente a la hora de ejecutar el programa?
-Justifique clara y concisamente su respuesta.
+Para calcular su capacidad final:  
+Ci (Capacidad Inicial)  
+Cf (Capacidad Final)  
+R (Constante del resize)  
+n (Número de resize llamados)  
+Des (Desperdicio)
+N = 10000 (Número de elementos que se ingresan)  
+  
+Cf = Ci * R^n (Ecuación capacidad final)  
+  
+Para calcular n:  
+
+log base R( N / Ci )
+
+Para calcular el desperdicio: 
+
+Des = Cf - N
+
+Vector x:  
+No se ve con que se inicializa pero en la pregunta dice que su capacidad inicial es 5 y se duplica al hacer resize.  
+Se van a agregar 10.000 elementos con el bucle for.  
+
+La capacidad final es 10.240, y se usan 10.000 casillas, por lo que su desperdicio es de 240.  
+
+Vector y:  
+Este vector se inicializa con una capacidad de 10 y cada resize se multiplica su capacidad por 1.8    
+Se van a agregar 10.000 elementos con el bucle for.  
+
+La capacidad final es 16.787, y se usan 10.000 casillas, por lo que su desperdicio es de 6.787.  
+
+Vector z:  
+Este vector se inicializa con una capacidad de 100 y cada resize duplica su capacidad.  
+Se van a agregar 10.000 elementos con el bucle for.  
+
+Su capacidad final será de 12.800, y como se usan 10.000 casillas, por lo que su desperdicio es de 2.800.  
+
+### 2. Cuál de los vectores resultó ser más eficiente a la hora de ejecutar el programa? Justifique clara y concisamente su respuesta.
+
 
