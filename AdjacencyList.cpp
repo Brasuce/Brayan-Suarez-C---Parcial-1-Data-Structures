@@ -47,3 +47,7 @@ public:
 int main() {
   return 0;
 }
+
+
+// No se pudo concluir el ejercicio, el código está incompleto.
+
