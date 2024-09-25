@@ -7,7 +7,8 @@ Parcial I Estructura de Datos 2024-2
 Universidad Tecnológica de Pereira  
 
 
-Pregunta 1  
+Pregunta 1 
+  
 La clase vector implementa lo que se conoce como un arreglo dinámico. Es decir, en parte  
 se comporta como un arreglo pero extiende la funcionalidad de los arreglos permitiendo que la  
 estructura de datos crezca o se contraiga de acuerdo a su uso. Responda las siguientes  
