@@ -135,3 +135,7 @@ cualquiera de las estructuras de datos discutidas en clase.
    
 3. Cree una operación que dada una ciudad retorne las ciudades que se encuentran  
 conectadas con esta.  
+
+{ Respuesta pregunta 3: La respuesta a esta pregunta se proporciona como un archivo .cpp que será anexado
+a este repositorio, donde se espera cumplir con el ejercicio propuesto en el tiempo que me queda del parcial.  
+De no completar el ejercicio a tiempo, anexaré de todas formas el documento inconcluso.  }
