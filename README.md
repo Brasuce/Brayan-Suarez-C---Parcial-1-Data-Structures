@@ -138,4 +138,4 @@ conectadas con esta.
 
 { Respuesta pregunta 3: La respuesta a esta pregunta se proporciona como un archivo .cpp que será anexado
 a este repositorio, donde se espera cumplir con el ejercicio propuesto en el tiempo que me queda del parcial.  
-De no completar el ejercicio a tiempo, no será anexado el documento por estar inconcluso.  }
+De no completar el ejercicio a tiempo, será anexado el documento inconcluso.  }
