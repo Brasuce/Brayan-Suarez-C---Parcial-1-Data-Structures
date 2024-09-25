@@ -95,19 +95,19 @@ Para calcular el desperdicio:
 
 Des = Cf - N
 
-Vector x:  
+### Vector x:  
 No se ve con que se inicializa pero en la pregunta dice que su capacidad inicial es 5 y se duplica al hacer resize.  
 Se van a agregar 10.000 elementos con el bucle for.  
   
 La capacidad final es 10.240, y se usan 10.000 casillas, por lo que su desperdicio es de 240.  
   
-Vector y:  
+### Vector y:  
 Este vector se inicializa con una capacidad de 10 y cada resize se multiplica su capacidad por 1.8    
 Se van a agregar 10.000 elementos con el bucle for.  
   
 La capacidad final es 11.568, y se usan 10.000 casillas, por lo que su desperdicio es de 1.568.  
   
-Vector z:  
+### Vector z:  
 Este vector se inicializa con una capacidad de 100 y cada resize duplica su capacidad.  
 Se van a agregar 10.000 elementos con el bucle for.  
   
