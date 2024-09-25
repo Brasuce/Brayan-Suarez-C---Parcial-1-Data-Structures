@@ -26,21 +26,24 @@ private:
     City() : connections(nullptr), next(nullptr) {}
   };
 
-  City *first;
-  int cityCount;
+  City* first;
+  City* last;
+  unsigned int cityCount;
 
 public:
   adjacencyList() : first(nullptr), cityCount(0) {}
 
   void add_city() {
-    City *newCity = new City();
+    City* newCity = new City();
     if (first == nullptr) {
       first = newCity;
+    } else {
+      last->next = newCity;
     }
     cityCount++;
   }
 };
 
 int main() {
-    return 0;
+  return 0;
 }
